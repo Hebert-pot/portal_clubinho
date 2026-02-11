@@ -1,0 +1,22 @@
+document.addEventListener('DOMContentLoaded', function() {
+        if (window.EmojiButton) {
+            const button = document.getElementById('btn-emoji-picker');
+            const input = document.getElementById('adm-emoji');
+            if (button && input) {
+                const picker = new EmojiButton({
+                    position: 'bottom-start',
+                    autoHide: false,
+                    showPreview: false,
+                    showSearch: true,
+                    showRecents: true,
+                    theme: 'auto',
+                });
+                button.addEventListener('click', () => {
+                    picker.togglePicker(button);
+                });
+                picker.on('emoji', emoji => {
+                    input.value = emoji;
+                });
+            }
+        }
+    });
