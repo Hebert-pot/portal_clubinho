@@ -1,9 +1,9 @@
 
 /* Variáveis de Identidade Visual - EE João Roberto Moreira */
 :root {
-    --verde-primario: #006400; /* Verde Bandeira */
-    --ouro-detalhe: #ffcc00;   /* Amarelo Ouro */
-    --fundo-gradiente: linear-gradient(135deg, #1b5e20, #fbc02d);
+    --verde-primario: rgb(13, 123, 226); /* Verde Bandeira */
+    --ouro-detalhe: rgb(6, 157, 226) ;   /* Amarelo Ouro */
+    --fundo-gradiente: linear-gradient(135deg, #0f65e7, rgb(255, 255, 255));
     --branco-card: rgba(255, 255, 255, 0.98);
     --sombra: 0 10px 30px rgba(0,0,0,0.3);
 }
